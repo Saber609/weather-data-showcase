@@ -1,3 +1,4 @@
+/* Adapt styles according to your preferences */
 body {
     font-family: sans-serif;
     margin: 0;
@@ -34,11 +35,8 @@ h1 {
     margin-bottom: 10px;
 }
 
-.weather-card img {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: 0 auto;
+.weather-card .icon {
+    font-size: 4em;
     margin-bottom: 10px;
 }
 

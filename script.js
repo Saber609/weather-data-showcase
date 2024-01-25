@@ -1,10 +1,12 @@
-const apiKey = "1235245cf29f5237baf8eda916c8155e";
+const apiKey = "b96712596a4902a5a615d746a5a91e80";
+
 const cities = [
     { name: "Tokyo, Japan", lat: 35.6895, lng: 139.6917 },
     { name: "London, United Kingdom", lat: 51.5074, lng: -0.1278 },
     { name: "New York City, USA", lat: 40.7128, lng: -74.0060 },
 ];
 
+// Load the Google Maps API asynchronously
 const script = document.createElement("script");
 script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBWswKUoWuvoDe_RBLb3yxe6qDP1b2DQvU&callback=initMap`;
 script.async = true;
@@ -31,17 +33,4 @@ function initMap() {
         bounds.extend(marker.position);
     });
 
-    map.fitBounds(bounds);
-}
-
-function createWeatherCard(city) {
-    const card = document.createElement("div");
-    card.classList.add("weather-card");
-
-    const h2 = document.createElement("h2");
-    h2.textContent = city.name;
-    card.appendChild(h2);
-
-    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=<span class="math-inline">\{city\.lat\}&lon\=</span>{city.lng}&appid=${apiKey}`)
-        .then((response) => response.json())
-        .then((data) => {
+    map.fit
