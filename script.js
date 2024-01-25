@@ -1,5 +1,9 @@
 const apiKey = "b96712596a4902a5a615d746a5a91e80";
 
+
+    // Your OpenWeatherMap API key (replace with your own)
+const apiKey = "YOUR_OPENWEATHERMAP_API_KEY";
+
 const cities = [
     { name: "Tokyo, Japan", lat: 35.6895, lng: 139.6917 },
     { name: "London, United Kingdom", lat: 51.5074, lng: -0.1278 },
