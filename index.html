@@ -6,24 +6,20 @@
     <title>Real-Time Weather Data Showcase (Metric)</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-5ISCFLzYtwcaUSyYJuw /qxc+gQAj5hnAWuJyE+42cnEughbOc1Cq6xNJG+8McdqfkjjgH+qFxeaDc/x8gFL9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <script type="module" src="./index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-5ISCFLzYtwcaUSyYJuw/qxc+gQAj5hnAWuJyE+42cnEughbOc1Cq6xNJG+8McdqfkjjgH+qFxeaDc/x8gFL9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
 </head>
 <body>
     <h1>Real-Time Weather Comparison (Metric)</h1>
-    <div id="map"></div>
-    <div id="weather-cards"></div>
-    <script src="script.js"></script>
-    <h3>My Google Maps Demo</h3>
-    <!--The div element for the map -->
-    <div id="map"></div>
+    <div id="weather-map"></div>  <div id="weather-cards"></div>
 
-    <!-- prettier-ignore -->
+    <h3>My Google Maps Demo</h3>
+    <div id="uluru-map"></div>
     <script>
-    (g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
-            ({ key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly" });</script>
+        // Use environment variable or secure configuration for API key
+        const apiKey = process.env.OPENWEATHERMAP_API_KEY;
+
+        // ... rest of your JavaScript code
+    </script>
 </body>
 </html>
